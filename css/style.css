@@ -102,7 +102,7 @@ body{
 
 /* ===================Header lang========================= */
 
-.header__lang{
+/* .header__lang{
 	z-index: 6	;
 	margin: auto 50px auto auto;
 }
@@ -122,7 +122,7 @@ body{
 }
 .lang__link-en{
 	color: var(--orange);
-}
+} */
 
 
 
@@ -329,7 +329,6 @@ body{
 	font-size: 20px;
 	line-height: 36px;
 	color: var(--dark-blue);
-	transition: all 0.3s ease-in-out;
 	background-color: #fff;
 	padding: 5px;
 	border-radius: 5px 15px 15px 15px;
@@ -349,7 +348,7 @@ body{
 }
 .works__body{
 	display: none;	
-	animation: opacity 0.8s ease-in-out ;
+	animation: opacity 0.4s ease-in-out ;
 }
 @keyframes opacity{
 	0%{
@@ -419,6 +418,11 @@ body{
 	text-align: center;
 	margin: 0 0px 50px 0px;
 	position: relative;
+	border-radius: 20px;
+	transition: all 0.3s ease-in-out;
+}
+.video__item:hover{
+	box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.103);
 }
 .video__item-content{
 	width: 100%;
