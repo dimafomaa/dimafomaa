@@ -1,3 +1,14 @@
+:root{
+	--blue: #286f6c;
+	--dark-blue: #0d2f3f;
+	--dark-grey: #323836;
+	--orange: #fda300;
+	--white: #fff;
+	--bg: #f8f7f2;
+	--border: #f1f1f1;
+}
+
+
 @media (max-width:1172.98px){
 	.slick-list{
 		overflow: hidden;
@@ -44,7 +55,7 @@
 		content: "";
 		position: absolute;
 		height: 5px;
-		background-color: #0d2f3f;
+		background-color: var(--dark-blue);
 		margin: auto;
 		width: 100%;
 		transition: all 0.3s ease-in-out;
@@ -61,15 +72,15 @@
 		right: 0;
 		width: 100%;
 		transform-origin: right;
-		background-color: #fda300;
+		background-color: var(--orange);
 	}
 	.header__burger.active::after{
 		width: 75%;
-		background-color: #0d2f3f;
+		background-color: var(--dark-blue);
 	}
 	.header__burger.active::before{
 		width: 100%;
-		background-color: #fda300;
+		background-color: var(--orange);
 	}
 
 
@@ -79,7 +90,7 @@
 		right: -100%;
 		height: 100%;
 		width: 100%;
-		background-color: #f8f7f2;
+		background-color: var(--bg);
 		padding: 120px 15px 0 0 ;
 		overflow: auto;
 		transition: all 0.3s ease-in-out; 
@@ -87,6 +98,7 @@
 	}
 	.menu__item{
 		margin-bottom: 40px;
+		margin-right: 0;
 	}
 	.menu__link{
 		font-size: 32px;

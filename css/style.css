@@ -3,6 +3,9 @@
 	--dark-blue: #0d2f3f;
 	--dark-grey: #323836;
 	--orange: #fda300;
+	--white: #fff;
+	--bg: #f8f7f2;
+	--border: #f1f1f1;
 }
 
 
@@ -12,8 +15,8 @@ html{
 body{
 	font-family: 'Sniglet', cursive;
 	font-weight: 400;
-	color: #070707;
-	background-color: #f8f7f2;
+	color: var(--dark-blue);
+	background-color: var(--bg);
 	position: relative;
 }
 .wrapper{
@@ -40,16 +43,18 @@ body{
 	font-weight: 400;
 	font-size: 18px;
 	margin-bottom: 40px;
-	color: #fff;
+	color: var(--white);
 	padding: 8px 23px;
 	background-color: var(--orange);
 	border-radius: 50px;
 	display: inline-block;
 	transition: all 0.3s ease-in-out;
 }
+
 .btn:hover{
 	transform: translateY(-3px);
 }
+
 /* ===================Header========================= */
 
 .header{
@@ -57,7 +62,6 @@ body{
 	width: 100%;
 	top: 0;
 	left: 0;
-	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.014);
 	z-index: 50;
 }
 .header::before{
@@ -67,8 +71,9 @@ body{
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: #f8f7f2;
-	z-index: 2;
+	background: var(--bg);
+	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.014);
+	z-index: 6;
 }
 .header__inner{
 	display: flex;
@@ -114,10 +119,10 @@ body{
 	z-index: 6;
 }
 .menu__item{
-	margin-left: 50px;
+	margin-right: 50px;
 }
-.menu__item:first-child{
-	margin-left: 0;
+.menu__item:last-child{
+	margin-right: 0;
 }
 .menu__link{
 	font-family: 'Sniglet', cursive;
@@ -217,7 +222,7 @@ body{
 /* ===================Skills========================= */
 
 .skills {
-	background-color: #fff;
+	background: var(--white);
 	padding: 70px 0;
 }
 .skills__inner {
@@ -248,7 +253,8 @@ body{
 	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.123);
 	padding: 25px;
 	border-radius: 20px;
-	border: 1px solid #f1f1f1;
+	border: 1px solid var(--border);
+	color: var(--dark-blue);
 }
 .skills__image {
 	margin-bottom: 30px;
@@ -264,7 +270,6 @@ body{
 	font-size: 24px;
 	line-height: 36px;
 	text-transform: uppercase;
-	color: var(--dark-blue);
 	margin-bottom: 20px;
 	transition: all 0.3s ease-in-out;
 }
@@ -272,7 +277,6 @@ body{
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 200%;
-	color: var(--dark-blue);
 	flex: 1 1 auto;
 }
 
@@ -281,13 +285,6 @@ body{
 
 .works {
 	padding: 70px 0 50px 0;
-}
-.works__title {
-	font-weight: 600;
-	font-size: 34px;
-	line-height: 51px;
-	text-align: center;
-	color: #070707;
 }
 .works__tab{
 	text-align: center;
@@ -299,18 +296,18 @@ body{
 	font-size: 20px;
 	line-height: 36px;
 	color: var(--dark-blue);
-	background-color: #fff;
+	background-color: var(--white);
 	padding: 5px;
 	border-radius: 5px 15px 15px 15px;
 	cursor: pointer;
 	width: 80px;
 }
 .works__tab-btn:hover{
-	color: #fff;
+	color: var(--white);
 	background-color: var(--dark-blue);
 }
 .works__tab-btn.active{
-	color: #fff;
+	color: var(--white);
 	background-color: var(--dark-blue);
 }
 .works__tab-btn:not(:last-child){
@@ -334,7 +331,7 @@ body{
 }
 .works__item {
 	margin: 0 10px 20px;	
-	background-color: #fff;
+	background: var(--white);
 	padding: 10px ;
 	border-radius: 20px;
 	transition: all 0.3s ease-in-out;
@@ -357,7 +354,7 @@ body{
 	font-size: 18px;
 	line-height: 27px;
 	text-align: center;
-	color: #070707;
+	color: var(--dark-blue);
 	margin-top: 30px;
 	position: relative;
 	transition: all 0.3s ease-in-out;
@@ -376,7 +373,7 @@ body{
 
 .video {
 	padding: 70px 0;
-	background-color: #fff;
+	background: var(--white);
 }
 .video__inner {
 	text-align: center;
@@ -435,24 +432,21 @@ body{
 	margin: 0 10px;
 }
 .video__inner .slick-dots li.slick-active button{
-	background-color: #fda300;
+	background: var(--orange);
 	transition: all 0.3s ease-in-out;
 }
 .video__inner .slick-dots li button{
 	font-size: 0;
 	width: 20px;
 	height: 20px;
-	background-color: #e6e5e0;
+	background: var(--border);
 	border-radius: 50%;
 	cursor: pointer;
 }
-
-
 /* ===================Contact========================= */
 
 .contact {
 	padding: 70px 0;
-
 }
 .contact__inner {
 	text-align: center;
@@ -506,7 +500,7 @@ body{
 
 .footer {
 	padding: 10px 0;
-	background-color: #fff;
+	background: var(--white);
 }
 .footer__inner {
 	text-align: center;
@@ -517,8 +511,7 @@ body{
 	line-height: 21px;
 	color: var(--blue);
 }
-.footer__link-bio {
-	
+.footer__link-bio {	
 	font-weight: 400;
 	font-size: 12px;
 	line-height: 21px;
