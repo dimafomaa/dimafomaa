@@ -17,13 +17,21 @@ $(document).ready(function(){
 		$('.video__inner').slick({
 			arrows:false,
 			dots:true,
-			slidesToShow:2,
+			slidesToShow:3,
+			slidesToScroll:3,
 			infinite: false,
 			responsive: [
 				{
-					breakpoint: 768,
+					breakpoint: 900,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll:2,	
+					}
+				},{
+					breakpoint: 650,
 					settings: {
 						slidesToShow: 1,
+						slidesToScroll:1,
 					}
 				}
 			]

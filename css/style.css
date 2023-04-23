@@ -378,7 +378,7 @@ body{
 }
 .slider .slick-dots li{
 	list-style: none;
-	margin: 0 10px;
+	margin: 0 5px;
 }
 .slider .slick-dots li.slick-active button{
 	background: var(--orange);
@@ -450,10 +450,11 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-top: 20px;
 }
 .video__inner .slick-dots li{
 	list-style: none;
-	margin: 0 10px;
+	margin: 0 5px;
 }
 .video__inner .slick-dots li.slick-active button{
 	background: var(--orange);
