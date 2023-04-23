@@ -1,5 +1,3 @@
-
-
 $(document).ready(function(){
 	$('.header__burger').click(function(event){
 		$('.header__burger, .menu').toggleClass('active');
@@ -32,14 +30,34 @@ $(document).ready(function(){
 		});
 	});
 
-	// $(".works__body").slice(0, 6).show();
-	// $("#loadMore").on("click", function(e){
-	// 	e.preventDefault();
-	// 	$(".works__body:hidden").slice(0, 3).slideDown();
-	// 	if($(".content:hidden").length == 0) {
-	// 		$("#loadMore").text("All Content").addClass("noContent");
-	// 	}
-	// });
+	
+	$(document).ready(function(){
+		$('.slider').slick({
+			arrows:false,
+			dots:true,
+			slidesToShow:3,
+			slidesToScroll:3,
+			rows:2 ,
+			infinite: true,
+			responsive: [
+				{
+					breakpoint: 900,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll:2,
+					}
+				},{
+					breakpoint: 650,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll:1,
+					}
+				}
+				
+			]
+		});
+	});
+
 });
 
 // ==================================

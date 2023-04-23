@@ -325,6 +325,10 @@ body{
 		opacity: 1;
 	}
 }
+.slider.works__body.active{
+	display: block;
+	
+}
 .works__body.active{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -362,12 +366,32 @@ body{
 .works__item:hover .works__text{
 	transform: translateY(-5px);
 }
-/* .works__button{
-	text-align: center;
+.slider .slick-track{
+	gap: 20px;
+	
 }
-.noContent {
-	pointer-events: none;
-} */
+
+.slider .slick-dots{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.slider .slick-dots li{
+	list-style: none;
+	margin: 0 10px;
+}
+.slider .slick-dots li.slick-active button{
+	background: var(--orange);
+	transition: all 0.3s ease-in-out;
+}
+.slider .slick-dots li button{
+	font-size: 0;
+	width: 20px;
+	height: 20px;
+	background: var(--border);
+	border-radius: 50%;
+	cursor: pointer;
+}
 
 /* ===================Video========================= */
 

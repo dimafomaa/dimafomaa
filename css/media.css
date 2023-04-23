@@ -151,13 +151,7 @@
 	.works {
 		padding: 50px 0 20px 0;
 	}
-	.works__body.active {
-		display: block;
-		text-align: center;
-	}
-	.works__item {
-		margin: 0 0px 20px;	
-	}
+	
 
 	
 	.video{
@@ -185,7 +179,19 @@
 	}
 }
 
-
+@media (max-width: 650px){
+	.works__body.active {
+		display: block;
+		text-align: center;
+	}
+	.works__item {
+		margin: 0 0px 20px;	
+	}
+	.slider .slick-track{
+		gap: 5px;
+		
+	}
+}
 
 @media (max-width:485.98px){
 	.home{
